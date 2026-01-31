@@ -1,0 +1,4 @@
+driver.switchTo().frame(id/webelement); -> to swtich to perticular frame
+driver.switchTo().defaultContent(); -> go back to main frame
+driver.switchTo().parentFrame(); -> goto parent frame in nested frame
+driver.switchTo().frame(0); ->by number but its not recommended
