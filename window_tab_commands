@@ -1,0 +1,27 @@
+NOTE: window and tabs both are considere same
+
+- to switch to window/tab:
+driver.switchTo().window(id/windowid/tabid);
+
+- to close the window/tab
+driver.close() -> current window
+driver.quite() -> all windows
+
+- to open new window: driver.switchTo().window(WindowType.WINDOW);
+- to open new tab: driver.switchTo().window(WindowType.TAB);
+
+- to get parent window/tab id:
+String parentId = driver.getWindowHandle()
+
+- to get all opened window/tab ids:
+Set<String> allIds = driver.getWindowHandles();
+
+- how to work with windows:
+Set<String> allIds = driver.getWindowHandles();
+for(String window : allIds){
+  driver.switchTo().window(window);
+  if(driver.getText().equals("yourvalue")){
+    //do something
+  }
+}
+NOTE:in if condition you can check pagetitle, pageurl, or something web element to confirm or shift to that tab
