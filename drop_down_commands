@@ -13,7 +13,7 @@
   8. ss.deselectByValue("value");
   9. ss.deselectByIndex(integer);
   10. ss.deselectAll();
-  11. List<WebElement> selectedOptions = ss.getAllSelectedOptions();
+  11. List<WebElement> selectedOptions = ss.getAllSelectedOptions(); -> storea all the selected options by user
 
 2. by div tag without anything
   driver.findElement(By.xpath("//span[text()='Select Country']")).click();
