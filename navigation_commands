@@ -1,0 +1,4 @@
+1.driver.navigate.to(url)
+2.driver.navigate.forward()
+3.driver.navigate.back()
+4.driver.navigate.refresh()
