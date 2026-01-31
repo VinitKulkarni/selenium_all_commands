@@ -1,0 +1,21 @@
+1. implict wait:
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+2. explict wait
+WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+wait.until(ExpectedConditions.condition(webelement));
+
+conditions:
+1. elementToBeClickable
+2. visibilityOf
+3. visibilityOfElementLocated
+4. presenceOfElementLocated -> DOM
+5. alertIsPresent
+
+3. fluent wait
+Wait<WebDriver> wait = new FluentWait<>(driver)
+  .withTimeout(Duration.ofSeconds(value))
+  .pollingEvery(Duration.ofSeconds(value))
+  .ignoring(Exception.class)
+  .withMessage("msg");
+wait.until(ExpectedConditions.condition(webElement));
