@@ -1,0 +1,9 @@
+Actions act = new Actions(driver);
+Must use .perform() at the end
+
+Remember these and make combinations to get the work done:
+- click(webelement)
+- sendKeys(webelement, "data")
+- sendKeys(Keys.ENTER/SHIFT/CONTROL/ETC)  
+- keyDown(Keys.ENTER/SHIFT/CONTROL/ETC)
+- keyUp(Keys.ENTER/SHIFT/CONTROL/ETC)
