@@ -1,0 +1,23 @@
+WebElement element1 = driver.findElement(By.id("id"));
+Actions act = new Actions(driver);
+
+1.click:
+act.click(element1).perform();
+
+2.double click:
+act.doubleClick(element1).perform();
+
+3.right click:
+act.contextClick(element1).perform();
+
+4.drag and drop
+act.dragAndDrop(sourceElement, destElement).perform();
+
+5.move to element or hover over element:
+act.moveToElement(element1).perform();
+
+6.move to element and click:
+act.moveToElement(element1).click().perform();
+
+7.element inside element:
+act.moveToElement(element1).moveToElement(element2).perform();
