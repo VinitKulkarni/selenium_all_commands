@@ -1,0 +1,25 @@
+Alert:
+Types: 1.simple alert(accept/dismiss)   2. confirmation alert(ok/cancel)   3.prompt alert(ok/cancel/senddata)
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+alert.getText();
+or 
+driver.switchTo().alert().accept();
+driver.switchTo().alert().dismiss();
+driver.switchTo().alert().sendKeys("data");
+driver.switchTo().alert().getText();
+
+
+Popup:
+Types: 
+1.hidden division popup  2.child popup  
+3.file upload/download  popup  4.js alert popup  
+5.authentication popup 6.permission popup
+
+
+Both can be handlede according they suite:
+1. handle with Alert interface
+2. handle with web element method
+3. handle with window/tab way
+4. handle with Robot class
