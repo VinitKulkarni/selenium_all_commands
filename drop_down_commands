@@ -1,0 +1,31 @@
+1. by select class and its methods
+  Select ss = new Select(webElement);
+
+  methods:
+  1. ss.selectByVisibleText("value");
+  2. ss.selectByValue("value");
+  3. ss.selectByIndex(integer);
+  4. ss.isMultiple();
+  5. List<WebElement> options = ss.getOptions(); -> stores all drop down values in options
+  6. WebElement selected = ss.getFirstSelectedOption();
+     System.out.println(selected.getText());
+  7. ss.deselectByVisibleText("value");
+  8. ss.deselectByValue("value");
+  9. ss.deselectByIndex(integer);
+  10. ss.deselectAll();
+  11. List<WebElement> selectedOptions = ss.getAllSelectedOptions();
+
+2. by div tag without anything
+  driver.findElement(By.xpath("//span[text()='Select Country']")).click();
+  List<WebElement> options = driver.findElements(By.xpath("//ul/li"));
+
+  for (WebElement option : options) {
+    if (option.getText().equals("India")) {
+      option.click();
+      break;
+    }
+  }
+
+
+
+
